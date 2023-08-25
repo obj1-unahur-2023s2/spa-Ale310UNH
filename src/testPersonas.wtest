@@ -1,0 +1,12 @@
+import personas.*
+
+/*
+test "Olivia nace con concentracion = 6" {
+
+	assert.that(true)
+
+} */
+
+test "a" {
+	assert.equals(olivia.gradDeConcentracion(), 6 )
+}
