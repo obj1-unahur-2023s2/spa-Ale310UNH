@@ -1,12 +1,20 @@
 import personas.*
 
-/*
-test "Olivia nace con concentracion = 6" {
 
-	assert.that(true)
+test "El grado de concentracion de Olivia arranca en 6" {
 
-} */
+	assert.equals(6, olivia.gradDeConcentracion())
 
-test "a" {
-	assert.equals(olivia.gradDeConcentracion(), 6 )
+}
+
+test "cuando Olivia recibe masajes su grado de concentracion aumenta 3" {
+	
+	const grado = olivia.gradDeConcentracion()
+	olivia.recibirMasaje()
+	assert.that(olivia.gradDeConcentracion() == grado + 3)
+}
+
+test "bruno es feliz cuando recibe un nmasaje" {
+	bruno.recibirMasaje()
+	assert.that(bruno.esFeliz())
 }
